@@ -11,5 +11,6 @@ class Sailsd
 
   def send_bytes(msg)
     @socket.puts(msg)
+    return @socket.gets
   end
 end
